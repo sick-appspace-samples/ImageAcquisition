@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="ImageAcquisition">
+        <crown name="HeightmapAcquisition">
+            <desc>user script</desc>
+            <serves/>
+        </crown>
+        <crown name="Config">
+            <desc>No description yet...</desc>
+            <serves>
+                <event name="OnFOVLength">
+                    <desc>No description yet...</desc>
+                    <param name="length" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnFOVX0">
+                    <desc></desc>
+                    <param name="value" type="float" desc=""/>
+                </event>
+                <event name="OnFOVX1">
+                    <desc></desc>
+                    <param name="value" type="float" desc=""/>
+                </event>
+                <event name="OnFOVZ0">
+                    <desc></desc>
+                    <param name="value" type="float" desc=""/>
+                </event>
+                <event name="OnFOVZ1">
+                    <desc></desc>
+                    <param name="value" type="float" desc=""/>
+                </event>
+                <event name="OnFOVLengthMax">
+                    <desc>No description yet...</desc>
+                    <param name="max" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnNewImageEvent">
+                    <desc>No description yet...</desc>
+                    <param name="frameNumber" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnProfileTrigger">
+                    <desc>No description yet...</desc>
+                    <param name="isFreeRunning" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnSetEncoderMode">
+                    <desc>No description yet...</desc>
+                    <param name="EncoderMode" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnValidateConfig">
+                    <desc>No description yet...</desc>
+                    <param name="configValid" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnSetTriggerModeNone">
+                    <desc>No description yet...</desc>
+                    <param name="triggerModeNone" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnSetTriggerModeIO">
+                    <desc>No description yet...</desc>
+                    <param name="triggerModeIO" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnSetTriggerModeObject">
+                    <desc>No description yet...</desc>
+                    <param name="triggerModeObject" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnSetTriggerModeSoftware">
+                    <desc>No description yet...</desc>
+                    <param name="triggerModeSoftware" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnXresMinLimit">
+                    <desc>No description yet...</desc>
+                    <param name="min" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnXresMaxLimit">
+                    <desc>No description yet...</desc>
+                    <param name="max" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnImageTriggerModeSoftwareActive">
+                    <desc>No description yet...</desc>
+                    <param name="ImageTriggerModeSoftwareActive" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnSetFreerunningMode">
+                    <desc>No description yet...</desc>
+                    <param name="mode" type="bool" desc="No description yet..."/>
+                </event>
+                <event name="OnPeakSelection">
+                    <desc>No description yet...</desc>
+                    <param name="PeakSelection" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnImageTrigger">
+                    <desc>No description yet...</desc>
+                    <param name="ImageTrigger" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnEncoderPulses">
+                    <desc>No description yet...</desc>
+                    <param name="EncoderPulses" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnProfileDistance">
+                    <desc>No description yet...</desc>
+                    <param name="ProfileDistance" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnXResolution">
+                    <desc>No description yet...</desc>
+                    <param name="XResolution" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnExposure">
+                    <desc>No description yet...</desc>
+                    <param name="Exposure" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnLaserThreshold">
+                    <desc>No description yet...</desc>
+                    <param name="LaserThreshold" type="int" desc="No description yet..."/>
+                </event>
+                <event name="OnMaxFreerunningSpeed">
+                    <desc>No description yet...</desc>
+                    <param name="MaxFreerunningSpeed" type="float" desc="No description yet..."/>
+                </event>
+                <event name="OnConfigError">
+                    <desc></desc>
+                    <param name="message" type="string" desc=""/>
+                </event>
+                <function name="getCfovZMin">
+                    <desc>No description yet...</desc>
+                    <return name="FOVZMin" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setCfovZMin">
+                    <desc>No description yet...</desc>
+                    <param name="FOVZMin" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getCfovZMax">
+                    <desc>No description yet...</desc>
+                    <return name="FOVZMax" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setCfovZMax">
+                    <desc>No description yet...</desc>
+                    <param name="FOVZMax" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getCfovXMin">
+                    <desc>No description yet...</desc>
+                    <return name="FOVXMin" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getCfovXMax">
+                    <desc>No description yet...</desc>
+                    <return name="FOVXMax" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setCfovXMin">
+                    <desc>No description yet...</desc>
+                    <param name="FOVXMin" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setCfovXMax">
+                    <desc>No description yet...</desc>
+                    <param name="FOVXMax" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getSpeed">
+                    <desc>No description yet...</desc>
+                    <return name="Speed" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setSpeed">
+                    <desc>No description yet...</desc>
+                    <param name="Speed" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getFreeRunningSpeedLimitMax">
+                    <desc>No description yet...</desc>
+                    <return name="FreeRunningSpeedLimitMax" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getExposure">
+                    <desc>No description yet...</desc>
+                    <return name="Exposure" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setExposure">
+                    <desc>No description yet...</desc>
+                    <param name="Exposure" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setConfig">
+                    <desc>No description yet...</desc>
+                </function>
+                <function name="getProfileTriggerMode">
+                    <desc>No description yet...</desc>
+                    <return name="profileTriggerMode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setProfileTriggerMode">
+                    <desc>No description yet...</desc>
+                    <param name="profileTriggerMode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getEncoderPulsesPerMm">
+                    <desc>No description yet...</desc>
+                    <return name="encoderPulsesPerMm" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setEncoderPulsesPerMm">
+                    <desc>No description yet...</desc>
+                    <param name="encoderPulsesPerMm" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getGain">
+                    <desc>No description yet...</desc>
+                    <return name="gain" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setGain">
+                    <desc>No description yet...</desc>
+                    <param name="gain" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getLaserThreshold">
+                    <desc>No description yet...</desc>
+                    <return name="LaserThreshold" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setLaserThreshold">
+                    <desc>No description yet...</desc>
+                    <param name="LaserThreshold" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getProfileDistance">
+                    <desc>No description yet...</desc>
+                    <return name="ProfileDistance" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setProfileDistance">
+                    <desc>No description yet...</desc>
+                    <param name="ProfileDistance" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getCfovLength">
+                    <desc>No description yet...</desc>
+                    <return name="Length" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setCfovLength">
+                    <desc>No description yet...</desc>
+                    <param name="Length" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getProfileTriggerModeInverted">
+                    <desc>No description yet...</desc>
+                    <return name="profileTriggerModeInverted" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getXResolution">
+                    <desc>No description yet...</desc>
+                    <return name="XResolution" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setXResolution">
+                    <desc>No description yet...</desc>
+                    <param name="XResolution" type="float" desc="No description yet..."/>
+                </function>
+                <function name="validateConfig">
+                    <desc>No description yet...</desc>
+                    <return name="isValid" type="bool" desc="No description yet..."/>
+                </function>
+                <function name="getXResolutionLimitMin">
+                    <desc>No description yet...</desc>
+                    <return name="XResolutionLimitMin" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getXResolutionLimitMax">
+                    <desc>No description yet...</desc>
+                    <return name="float" type="float" desc="No description yet..."/>
+                </function>
+                <function name="getPeakSelectionMode">
+                    <desc>No description yet...</desc>
+                    <return name="Mode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setPeakSelectionMode">
+                    <desc>No description yet...</desc>
+                    <param name="Mode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getImageTriggerMode">
+                    <desc>No description yet...</desc>
+                    <return name="ImageTriggerMode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setImageTriggerMode">
+                    <desc>No description yet...</desc>
+                    <param name="ImageTriggerMode" type="int" desc="No description yet..."/>
+                </function>
+                <function name="isImageTriggerModeIO">
+                    <desc>No description yet...</desc>
+                    <return name="IO3Mode" type="bool" desc="No description yet..."/>
+                </function>
+                <function name="getFrameNumber">
+                    <desc>No description yet...</desc>
+                    <return name="FrameNumber" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setForceTrigger">
+                    <desc>No description yet...</desc>
+                </function>
+                <function name="isImageTriggerModeSoftware">
+                    <desc>No description yet...</desc>
+                    <return name="SoftwareMode" type="bool" desc="No description yet..."/>
+                </function>
+                <function name="getImageTriggerDelayUnit">
+                    <desc>No description yet...</desc>
+                    <return name="DelayUnit" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getImageTriggerDelay">
+                    <desc>No description yet...</desc>
+                    <return name="Delay" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setImageTriggerDelayUnit">
+                    <desc>No description yet...</desc>
+                    <param name="newUnit" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setImageTriggerDelay">
+                    <desc>No description yet...</desc>
+                    <param name="value" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getConfigValid">
+                    <desc>No description yet...</desc>
+                    <return name="isValid" type="bool" desc="No description yet..."/>
+                </function>
+                <function name="saveConfig">
+                    <desc>No description yet...</desc>
+                </function>
+                <function name="loadConfig">
+                    <desc>No description yet...</desc>
+                </function>
+                <function name="setGFOV">
+                    <desc>No description yet...</desc>
+                    <param name="fov" type="int" desc="No description yet..."/>
+                </function>
+                <function name="getGFOV">
+                    <desc>No description yet...</desc>
+                    <return name="gfov" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setObjectTriggerPercentage">
+                    <desc>No description yet...</desc>
+                    <param name="value" type="int" desc="No description yet..."/>
+                </function>
+                <function name="setObjectTriggerPoint1X">
+                    <desc>No description yet...</desc>
+                    <param name="newParam0" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setObjectTriggerPoint1Z">
+                    <desc>No description yet...</desc>
+                    <param name="zValue" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setObjectTriggerPoint2X">
+                    <desc>No description yet...</desc>
+                    <param name="value" type="float" desc="No description yet..."/>
+                </function>
+                <function name="setObjectTriggerPoint2Z">
+                    <desc>No description yet...</desc>
+                    <param name="value" type="float" desc="No description yet..."/>
+                </function>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry path="pages" default="trispectorp.msdd">
+            <file type="application/zip">trispectorp.msdd</file>
+        </entry>
+        <entry path="scripts" default="main.lua">
+            <file type="text/x-lua">src/app.lua</file>
+            <file type="text/x-lua">src/decorations.lua</file>
+            <file type="text/x-lua">src/errorinfo.lua</file>
+            <file type="text/x-lua">src/fov.lua</file>
+            <file type="text/x-lua">src/globals.lua</file>
+            <file type="text/x-lua">src/ids.lua</file>
+            <file type="text/x-lua">src/serve.lua</file>
+            <file type="text/x-lua">src/util.lua</file>
+            <file type="text/x-lua">main.lua</file>
+        </entry>
+    </application>
+</manifest>

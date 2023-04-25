@@ -26,4 +26,4 @@ See tutorials for TriSpectorP
 
 ### Topics
 
-Device, TrispectorP, Image-3D, Acquisition, Sample, SICK-AppSpace
+device, trispectorp, image-3d, acquisition, sample, sick-appspace

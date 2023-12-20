@@ -47,8 +47,8 @@ local function onNewImage(images, sensorData)
   end
 end
 
--- Start the image provider with the 2D-config to show sensor images
--- for the SensorView.
+---Start the image provider with the 2D-config to show sensor images
+---for the SensorView.
 local function showSensorData()
   g.imageProvider:stop()
 
@@ -60,8 +60,8 @@ local function showSensorData()
   g.imageProvider:start()
 end
 
--- Start the image provider with the 3D-config to show heightmaps in the
--- ImageSetup view.
+---Start the image provider with the 3D-config to show heightmaps in the
+---ImageSetup view.
 local function show3DData()
   g.imageProvider:stop()
   g.imageProvider:setConfig(g.imageConfig3D)
@@ -77,8 +77,8 @@ local function onViewer3DConnect()
   app.GUIUpdate()
 end
 
--- @updateFOV(fovIconic:Shape3D)
--- Update the configuration with the FOV from the Field of View box.
+---Update the configuration with the FOV from the Field of View box.
+---@param fovIconic Shape3D
 local function updateFOV(fovIconic)
   local width, length, height, transform = fovIconic:getBoxParameters()
 
@@ -106,6 +106,7 @@ end
 ------------------------------------------------------------------------------
 -- ImageAcquisition entry-point
 ------------------------------------------------------------------------------
+
 local function main()
   serve.serveEvents()
   serve.serveFunctions()

@@ -1,15 +1,15 @@
 local module = {}
 
--- Create a table with functions for checking that the V3TConfig3D
--- parameter with the specified name is within its limits.
---
--- This requires that the there is a getter and limit-getter for the
--- name in V3TConfig3D:
---
---   * V3TConfig3D.get<Name>
---   * V3TConfig.get<Name>Limits
---
--- The prettyName is used for info messages.
+---Create a table with functions for checking that the V3TConfig3D
+---parameter with the specified name is within its limits.
+---
+---This requires that the there is a getter and limit-getter for the
+---name in V3TConfig3D:
+---
+---  * V3TConfig3D.get<Name>
+---  * V3TConfig.get<Name>Limits
+---
+---The prettyName is used for info messages.
 local function checker(name, prettyName)
   local function get_value(cfg)
     local getter = cfg['get' .. name]

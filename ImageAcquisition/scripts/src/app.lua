@@ -5,7 +5,7 @@ local util = require('src.util')
 
 local app = {}
 
--- Adds the object trigger line  to the 3D viewer
+---Adds the object trigger line  to the 3D viewer
 local function createObjectTriggerLine()
   local line, _ = g.imageConfig3D:getObjectTriggerLine()
   g.viewer3D:addShape(line, decorations.triggerLine, ids.triggerLine)
@@ -72,8 +72,8 @@ app.GUIUpdateLength = function()
   Script.notifyEvent('OnFOVLength', util.round(Config.getCfovLength(), 2))
 end
 
--- Returns the guaranteed FOV for the device model selected in the UI drop down,
--- or for the device the app runs on.
+---Returns the guaranteed FOV for the device model selected in the UI drop down,
+---or for the device the app runs on.
 local function getSelectedGuaranteedFOV(mode)
   if mode == 0 then
     -- Use the guaranteed FOV for the device the app runs on

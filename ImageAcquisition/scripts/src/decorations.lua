@@ -2,7 +2,7 @@
 -- Decorations for web HMI shapes and images
 ------------------------------------------------------------------------------
 
--- Helper for creating decorations with different fill and line alpha values
+---Helper for creating decorations with different fill and line alpha values
 local function shapeColor(r, g, b, aFill, aLine, lineWidth)
   local d = View.ShapeDecoration.create()
   d:setFillColor(r, g, b, aFill)
